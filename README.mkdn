@@ -15,6 +15,7 @@ How this work
    your TALKER token key in the githubtotalker.rb file.
 2. Then, you can run your app with any webserver, for
    example, thin, heroku, etc.
+3. Set your POST-Receive URL in GitHub.
 
 Testing
 -------
