@@ -1,12 +1,6 @@
 # example params hash sinatra receives
 
 { 
-  "data" => {
-    "token" => "token",
-    "url" => "https://youraccount.talkerapp.com/rooms/ROOM_ID",
-    "digest" => 1
-  },
-
   "payload" => {
     "after"  => "a47fd41f3aa4610ea527dcc1669dfdb9c15c5425",
     "ref"    => "refs/heads/master",

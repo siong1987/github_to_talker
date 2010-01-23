@@ -2,9 +2,10 @@
 
 require "json"
 
-payload_file = File.new("github_payload")
+payload_file = File.new("fixture/github_payload")
 hash = eval(payload_file.read)
 
 payload_json = JSON.generate(hash["payload"])
 
+# you might have to change the port number
 exec "curl --data-binary 'payload=#{payload_json}' http://localhost:9393/"

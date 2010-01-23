@@ -1,0 +1,31 @@
+GitHub To Talker
+================
+
+This is actually a rack application that helps to receive 
+POST request from your GitHub hook service and rePOSTs 
+the commit message back to your Talker room.
+
+Talker: http://talkerapp.com - a cool collaboration tool
+that I use with my friends.
+
+How this work
+-------------
+
+1. First you have to set the URL to your Talker room and 
+   your TALKER token key in the githubtotalker.rb file.
+2. Then, you can run your app with any webserver, for
+   example, thin, heroku, etc.
+
+Testing
+-------
+
+1. You can actually modify the the message gets sent to
+   Talker by playing with this app locally.
+2. I use Shotgun http://github.com/rtomayko/shotgun to
+   run this app.
+3. Then, configure your Talker room URL and Talker
+   token.
+4. Send the payload by calling:
+   `./script/deliver_payload`
+
+Good luck!
